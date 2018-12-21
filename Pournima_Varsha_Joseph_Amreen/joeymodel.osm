@@ -9062,10 +9062,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -7, 10, 0,                              !- X,Y,Z Vertex 1 {m}
-  0, 9.99999999999999, 0,                 !- X,Y,Z Vertex 2 {m}
-  0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
-  -7, 0, 0;                               !- X,Y,Z Vertex 4 {m}
+  0, 9.99999999999999, 0,                 !- X,Y,Z Vertex 1 {m}
+  0, 0, 0,                                !- X,Y,Z Vertex 2 {m}
+  -7, 0, 0,                               !- X,Y,Z Vertex 3 {m}
+  -7, 10, 0;                              !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {73cb9556-5fc1-419a-81a6-edebd3f97557}, !- Handle
@@ -10591,10 +10591,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  0, 9.99999999999999, 0,                 !- X,Y,Z Vertex 1 {m}
-  0, 0, 0,                                !- X,Y,Z Vertex 2 {m}
-  -7, 0, 0,                               !- X,Y,Z Vertex 3 {m}
-  -7, 10, 0;                              !- X,Y,Z Vertex 4 {m}
+  -7, 10, 0,                              !- X,Y,Z Vertex 1 {m}
+  0, 9.99999999999999, 0,                 !- X,Y,Z Vertex 2 {m}
+  0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
+  -7, 0, 0;                               !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {16ee5403-9475-4b88-b6a1-4212f5ef5cc8}, !- Handle
@@ -12120,10 +12120,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  0, 9.99999999999999, 0,                 !- X,Y,Z Vertex 1 {m}
-  0, 0, 0,                                !- X,Y,Z Vertex 2 {m}
-  -7, 0, 0,                               !- X,Y,Z Vertex 3 {m}
-  -7, 10, 0;                              !- X,Y,Z Vertex 4 {m}
+  -7, 10, 0,                              !- X,Y,Z Vertex 1 {m}
+  0, 9.99999999999999, 0,                 !- X,Y,Z Vertex 2 {m}
+  0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
+  -7, 0, 0;                               !- X,Y,Z Vertex 4 {m}
 
 OS:Surface,
   {5b3351fc-8143-4afa-986a-b73f5dbd65ba}, !- Handle
@@ -15539,7 +15539,7 @@ OS:WeatherFile,
 
 OS:Construction,
   {03ee14a1-7a7f-4dfa-8a21-e4714148cdb9}, !- Handle
-  My Const 3 ASHRAE 189.1-2009 ExtWall Mass ClimateZone 7-8 , !- Name
+  My Const 3 ASHRAE 189.1-2009 ExtWall Mass ClimateZone 7-8, !- Name
   {ceb48b86-a8eb-4a54-b505-b109f648476c}, !- Surface Rendering Name
   {f599e234-5bef-4b8b-a29e-b0e66ba90d1c}, !- Layer 1
   {86ce4850-8b71-4fc3-8156-58e01dd0d672}, !- Layer 2
