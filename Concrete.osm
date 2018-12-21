@@ -1,0 +1,109 @@
+
+OS:Version,
+  {985f77e7-98a4-4c8c-8aa1-2eb3e846685d}, !- Handle
+  2.7.0;                                  !- Version Identifier
+
+OS:Site,
+  {bf00b4fe-2720-4fc6-bc83-d41d49b67632}, !- Handle
+  MILAN,                                  !- Name
+  45.62,                                  !- Latitude {deg}
+  8.73,                                   !- Longitude {deg}
+  1,                                      !- Time Zone {hr}
+  211,                                    !- Elevation {m}
+  ;                                       !- Terrain
+
+OS:YearDescription,
+  {8fef6c64-5b66-48c5-810f-79923ba16dfe}, !- Handle
+  ,                                       !- Calendar Year
+  Sunday;                                 !- Day of Week for Start Day
+
+OS:ClimateZones,
+  {4fa9db90-03bd-4bdb-9b16-250861cf336b}, !- Handle
+  ,                                       !- Active Institution
+  ,                                       !- Active Year
+  ,                                       !- Climate Zone Institution Name 1
+  ,                                       !- Climate Zone Document Name 1
+  ,                                       !- Climate Zone Document Year 1
+  ,                                       !- Climate Zone Value 1
+  CEC,                                    !- Climate Zone Institution Name 2
+  California Climate Zone Descriptions,   !- Climate Zone Document Name 2
+  1995,                                   !- Climate Zone Document Year 2
+  ;                                       !- Climate Zone Value 2
+
+OS:Building,
+  {01c44e30-6b09-4003-a211-4a4f5af2e849}, !- Handle
+  Building 1,                             !- Name
+  ,                                       !- Building Sector Type
+  ,                                       !- North Axis {deg}
+  ,                                       !- Nominal Floor to Floor Height {m}
+  ,                                       !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ;                                       !- Default Schedule Set Name
+
+OS:Facility,
+  {2355e8f7-129a-4bb5-9795-fdff9fff9852}; !- Handle
+
+OS:SimulationControl,
+  {e67beead-0daa-495b-80ac-8bd6c42b165c}; !- Handle
+
+OS:Sizing:Parameters,
+  {273913fa-8dcd-4a92-a26d-25d494886888}, !- Handle
+  1.25,                                   !- Heating Sizing Factor
+  1.15;                                   !- Cooling Sizing Factor
+
+OS:Timestep,
+  {29b8baff-6e6b-4c18-a076-8fcb3fe3a8f0}, !- Handle
+  6;                                      !- Number of Timesteps per Hour
+
+OS:ShadowCalculation,
+  {5f3b16d7-62b3-44ba-be69-7ca7766d167b}, !- Handle
+  20,                                     !- Calculation Frequency
+  15000;                                  !- Maximum Figures in Shadow Overlap Calculations
+
+OS:HeatBalanceAlgorithm,
+  {7e0b4584-6645-4a83-82e6-f7d1769c2d1e}, !- Handle
+  ConductionTransferFunction,             !- Algorithm
+  200;                                    !- Surface Temperature Upper Limit {C}
+
+OS:RunPeriod,
+  {0d588085-7aca-4317-8d8a-8dd1735461f4}, !- Handle
+  Run Period 1,                           !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  ,                                       !- Use Weather File Holidays and Special Days
+  ,                                       !- Use Weather File Daylight Saving Period
+  ,                                       !- Apply Weekend Holiday Rule
+  ,                                       !- Use Weather File Rain Indicators
+  ,                                       !- Use Weather File Snow Indicators
+  ;                                       !- Number of Times Runperiod to be Repeated
+
+OS:LifeCycleCost:Parameters,
+  {7671524f-d5f5-4a00-86c9-cceac55dc67f}, !- Handle
+  ,                                       !- Analysis Type
+  ,                                       !- Discounting Convention
+  ,                                       !- Inflation Approach
+  ,                                       !- Real Discount Rate
+  ,                                       !- Nominal Discount Rate
+  ,                                       !- Inflation
+  ,                                       !- Base Date Month
+  ,                                       !- Base Date Year
+  ,                                       !- Service Date Month
+  ,                                       !- Service Date Year
+  ;                                       !- Length of Study Period in Years
+
+OS:WeatherFile,
+  {6148740c-0175-48cd-8be0-d2460c81f69d}, !- Handle
+  MILAN,                                  !- City
+  -,                                      !- State Province Region
+  ITA,                                    !- Country
+  IWEC Data,                              !- Data Source
+  160660,                                 !- WMO Number
+  45.62,                                  !- Latitude {deg}
+  8.73,                                   !- Longitude {deg}
+  1,                                      !- Time Zone {hr}
+  211,                                    !- Elevation {m}
+  file:ITA_Milan.160660_IWEC.epw,         !- Url
+  1EBE5C87;                               !- Checksum
+
